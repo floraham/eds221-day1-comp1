@@ -1,0 +1,26 @@
+---
+title: "eds221-day1-comp1"
+format: html
+editor: visual
+execute:
+  warning: false
+---
+
+```{r}
+library(tidyverse)
+```
+
+# Read in data
+
+```{r}
+energy <- read_csv("data/us_energy.csv")
+
+```
+### create a line chart of energy over time, with color based on the energy type. 
+```{r}
+ggplot(data=energy, aes(x = energy$year, y=energy$quadrillion_btu, color = energy$type)) + 
+  geom_line() +
+  geom_point() 
+```
+
+
