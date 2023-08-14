@@ -1,0 +1,9 @@
+---
+title: "delete2"
+format: html
+editor: visual
+---
+```{r}
+energy2 <- read_csv("data/us_energy.csv")
+```
+
